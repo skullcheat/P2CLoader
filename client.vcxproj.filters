@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{f733a104-de8a-46ac-bf61-49e3aa185c27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crypto">
+      <UniqueIdentifier>{69269a30-3490-4114-b239-b9549a850fd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="enc">
+      <UniqueIdentifier>{eb5bc497-b2c8-4d5a-a9b3-12c381445448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="managers">
+      <UniqueIdentifier>{aac29fd9-826f-4a2b-a782-076e5ce9ef10}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="client.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\crypto\crypto.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="random.cpp">
+      <Filter>enc</Filter>
+    </ClCompile>
+    <ClCompile Include="hwid.cpp">
+      <Filter>managers</Filter>
+    </ClCompile>
+    <ClCompile Include="enc.cpp">
+      <Filter>enc</Filter>
+    </ClCompile>
+    <ClCompile Include="program.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\crypto\crypto.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="includes.h">
+      <Filter>main</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
